@@ -54,5 +54,6 @@ def execute_job(message, collection):
     my_data = {'collectionName': collection,
                 "userinput": message
                }
+#ADDU USER AUTH
 
-    requests.post('https://autotexter9000.herokuapp.com/sendBulkText', data=my_data)
+    requests.post('https://autotexter9000.herokuapp.com/sendBulkText', data=my_data, auth=('ryanswei', 'ilovedolphins'))
